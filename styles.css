@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-header {
     background-color: var(--primary-black);
     color: var(--primary-white);
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,10 +43,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-image {
-    height: 50px;
+    height: 100px;
     width: auto;
-    aspect-ratio: 399 / 613;
-    max-width: 100px;
+    max-width: 250px;
 }
 
 .nav-menu {
