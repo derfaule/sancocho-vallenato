@@ -189,69 +189,6 @@ function expandStory(card, story) {
     }
 }
 
-// Open story detail
-function openStory(story) {
-    const drawer = document.getElementById('story-drawer');
-    const siteWrapper = document.querySelector('.site-wrapper');
-
-    console.log('openStory called for:', story.title);
-    console.log('drawer element:', drawer);
-    console.log('siteWrapper element:', siteWrapper);
-
-    if (!drawer || !siteWrapper) {
-        console.error('Drawer or site-wrapper not found');
-        return;
-    }
-
-    console.log('drawer.classList before:', drawer.className);
-    drawer.classList.remove('hidden');
-    console.log('drawer.classList after remove:', drawer.className);
-
-    siteWrapper.classList.add('drawer-open');
-    console.log('siteWrapper.classList after add:', siteWrapper.className);
-
-    const styles = window.getComputedStyle(drawer);
-    console.log('drawer computed styles:', {
-        display: styles.display,
-        visibility: styles.visibility,
-        opacity: styles.opacity,
-        gridColumn: styles.gridColumn,
-        gridRow: styles.gridRow,
-        width: styles.width,
-        height: styles.height,
-        zIndex: styles.zIndex
-    });
-
-    document.getElementById('storyTitle').textContent = story.title;
-    document.getElementById('storyArtist').textContent = story.artist || '';
-    document.getElementById('storyYear').textContent = story.year;
-    document.getElementById('storyContent').innerHTML = `<p>${story.content}</p>`;
-
-    // Set image
-    const imageDiv = document.getElementById('storyImage');
-    if (story.image) {
-        imageDiv.innerHTML = `<img src="${story.image}" alt="${story.title}">`;
-    } else {
-        imageDiv.innerHTML = '';
-    }
-
-    // Set YouTube embed
-    const spotifyEmbed = document.getElementById('spotifyEmbed');
-    if (story.youtubeUrl) {
-        const videoId = extractYouTubeId(story.youtubeUrl);
-        if (videoId) {
-            spotifyEmbed.innerHTML = `<iframe width="100%" height="315" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-        } else {
-            spotifyEmbed.innerHTML = `<a href="${story.youtubeUrl}" target="_blank" rel="noopener noreferrer" class="spotify-btn">Ver en YouTube</a>`;
-        }
-    } else {
-        spotifyEmbed.innerHTML = '';
-    }
-
-    drawer.classList.remove('hidden');
-    siteWrapper.classList.add('drawer-open');
-    document.body.style.overflow = 'hidden';
-}
 
 // Extract YouTube video ID from URL
 function extractYouTubeId(url) {
@@ -269,14 +206,6 @@ function extractYouTubeId(url) {
     return null;
 }
 
-// Close story detail
-function closeStory() {
-    const drawer = document.getElementById('story-drawer');
-    const siteWrapper = document.querySelector('.site-wrapper');
-    drawer.classList.add('hidden');
-    siteWrapper.classList.remove('drawer-open');
-    document.body.style.overflow = 'auto';
-}
 
 // Setup navigation
 function setupNavigation() {
@@ -327,9 +256,3 @@ function setupSmoothScroll() {
     });
 }
 
-// Close story detail on Escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-        closeStory();
-    }
-});
