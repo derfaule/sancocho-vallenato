@@ -159,6 +159,7 @@ function openStory(story) {
     }
 
     drawer.classList.remove('hidden');
+    document.querySelector('.stories-section').classList.add('drawer-open');
     document.body.style.overflow = 'hidden';
 }
 
@@ -174,6 +175,7 @@ async function fetchSpotifyEmbed(spotifyUrl) {
 function closeStory() {
     const drawer = document.getElementById('story-drawer');
     drawer.classList.add('hidden');
+    document.querySelector('.stories-section').classList.remove('drawer-open');
     document.body.style.overflow = 'auto';
 }
 
