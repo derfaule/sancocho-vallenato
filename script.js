@@ -172,14 +172,12 @@ function openStory(story) {
     });
 
     const rect = drawer.getBoundingClientRect();
-    console.log('drawer bounding rect:', {
-        top: rect.top,
-        left: rect.left,
-        right: rect.right,
-        bottom: rect.bottom,
-        width: rect.width,
-        height: rect.height
-    });
+    console.log('drawer bounding rect - top:', rect.top, 'left:', rect.left, 'width:', rect.width, 'height:', rect.height);
+    console.log('Full rect:', JSON.stringify({top: rect.top, left: rect.left, right: rect.right, bottom: rect.bottom, width: rect.width, height: rect.height}));
+
+    // Temporary visual indicator
+    drawer.style.backgroundColor = 'red !important';
+    console.log('Drawer background set to RED for debugging');
 
     document.getElementById('storyTitle').textContent = story.title;
     document.getElementById('storyArtist').textContent = story.artist || '';
