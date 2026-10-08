@@ -3,10 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
+      - Main
       - main
       - claude/bold-ride-2tn24x
   pull_request:
     branches:
+      - Main
       - main
 
 permissions:
