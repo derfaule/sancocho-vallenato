@@ -226,22 +226,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-content {
-    max-width: 1100px !important;
+    max-width: 1000px !important;
+    margin: 0 auto;
 }
 
 .intro-wrapper {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
+    display: block;
     position: relative;
 }
 
 .intro-image {
-    flex-shrink: 0;
-    width: 320px;
+    float: left;
+    width: 340px;
     height: auto;
-    position: sticky;
-    top: 100px;
+    margin: 0 2rem 2rem 0;
+    shape-margin: 1rem;
 }
 
 .intro-image img {
@@ -255,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.05rem;
     line-height: 1.9;
     color: var(--dark-gray);
-    flex: 1;
+    overflow: hidden;
 }
 
 .intro-text p {
@@ -278,15 +277,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive intro */
 @media (max-width: 900px) {
-    .intro-wrapper {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
     .intro-image {
+        float: none;
         width: 100%;
-        position: static;
-        margin-bottom: 1rem;
+        margin: 1rem 0;
     }
 
     .intro-text {
