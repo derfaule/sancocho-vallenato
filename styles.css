@@ -11,15 +11,16 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Spectral', serif;
     background-color: var(--primary-white);
     color: var(--primary-black);
     line-height: 1.6;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+    font-family: 'Spectral', serif;
+    font-weight: 700;
 }
 
 /* Navigation */
@@ -123,11 +124,11 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
     padding: 0.8rem 1.5rem;
     font-size: 0.95rem;
-    font-weight: bold;
+    font-weight: 700;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-    font-family: Arial, sans-serif;
+    font-family: 'Spectral', serif;
 }
 
 .btn-primary {
