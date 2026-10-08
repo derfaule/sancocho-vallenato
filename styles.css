@@ -234,11 +234,6 @@ h1, h2, h3, h4, h5, h6 {
     min-height: auto;
     padding: 4rem 2rem;
     background-color: var(--primary-white);
-    transition: margin-right 0.3s ease-in-out;
-}
-
-.stories-section.drawer-open {
-    margin-right: 500px;
 }
 
 .stories-grid {
@@ -285,21 +280,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Story Detail Drawer */
 .story-drawer {
     position: fixed;
-    top: 0;
-    right: 0;
     bottom: 0;
+    right: 0;
+    left: 0;
+    max-height: 90vh;
     width: 100%;
-    max-width: 500px;
     background-color: var(--primary-white);
     z-index: 200;
     overflow-y: auto;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.240, 1, 0.290, 1.0);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .story-drawer:not(.hidden) {
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 .story-drawer.hidden {
