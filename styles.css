@@ -175,23 +175,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
+    display: block;
+    position: relative;
 }
 
 .intro-image {
-    grid-column: 1 / -1;
-    display: flex;
-    justify-content: center;
+    width: 380px;
+    float: left;
+    margin-right: 3rem;
     margin-bottom: 2rem;
     position: sticky;
-    top: 100px;
+    top: 120px;
 }
 
 .intro-image img {
-    width: 300px;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -200,9 +198,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     line-height: 1.8;
     text-align: left;
-    grid-column: span 2;
-    columns: 2;
-    column-gap: 2rem;
+    overflow: auto;
+}
+
+.intro-text::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .intro-text p {
