@@ -71,12 +71,22 @@ h1, h2, h3, h4, h5, h6 {
 /* Main Layout */
 .site-wrapper {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.nav-header {
+    grid-column: 1 / -1;
 }
 
 .main-content {
-    flex: 1;
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.footer {
+    grid-column: 1 / -1;
 }
 
 .section {
@@ -232,11 +242,6 @@ h1, h2, h3, h4, h5, h6 {
     min-height: auto;
     padding: 4rem 2rem;
     background-color: var(--primary-white);
-    transition: margin-right 0.3s ease-in-out;
-}
-
-.stories-section.drawer-open {
-    margin-right: 500px;
 }
 
 .stories-grid {
@@ -293,23 +298,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Story Detail Drawer */
 .story-drawer {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    max-width: 500px;
+    position: static;
+    grid-column: 3;
+    grid-row: 2;
     background-color: var(--primary-white);
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise" seed="2" /></filter><rect width="100" height="100" fill="%23ffffff" opacity="0.05"/><rect width="100" height="100" fill="url(%23noise)" opacity="0.02"/></svg>');
-    z-index: 200;
     overflow-y: auto;
-    transform: translateX(100%);
-    transition: transform 0.5s cubic-bezier(0.240, 1, 0.290, 1.0);
-    box-shadow: none;
+    border-left: 1px solid #e0e0e0;
+    animation: none;
+    transform: none;
+    opacity: 1;
+    display: none;
 }
 
 .story-drawer:not(.hidden) {
-    transform: translateX(0);
+    display: block;
 }
 
 .story-drawer.hidden {
