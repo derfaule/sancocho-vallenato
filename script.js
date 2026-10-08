@@ -121,7 +121,7 @@ function openStory(story) {
     if (story.image) {
         imageDiv.innerHTML = `<img src="${story.image}" alt="${story.title}">`;
     } else {
-        imageDiv.style.backgroundImage = 'linear-gradient(135deg, #e63946 0%, #d62828 100%)';
+        imageDiv.style.backgroundImage = 'linear-gradient(135deg, #000000 0%, #000000 100%)';
         imageDiv.innerHTML = `<h3 style="color: white; font-size: 2rem; text-align: center;">${story.year}</h3>`;
     }
 
