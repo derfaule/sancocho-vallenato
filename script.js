@@ -146,16 +146,8 @@ function openStory(story) {
         imageDiv.innerHTML = '';
     }
 
-    // Set Spotify button
-    const spotifyBtn = document.getElementById('spotifyBtn');
-    if (story.spotifyUrl) {
-        spotifyBtn.onclick = () => window.open(story.spotifyUrl, '_blank');
-        spotifyBtn.style.display = 'block';
-    } else {
-        spotifyBtn.style.display = 'none';
-    }
-
     drawer.classList.remove('hidden');
+    document.querySelector('.stories-section').classList.add('drawer-open');
     document.body.style.overflow = 'hidden';
 }
 
@@ -163,6 +155,7 @@ function openStory(story) {
 function closeStory() {
     const drawer = document.getElementById('story-drawer');
     drawer.classList.add('hidden');
+    document.querySelector('.stories-section').classList.remove('drawer-open');
     document.body.style.overflow = 'auto';
 }
 
