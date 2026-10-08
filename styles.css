@@ -115,7 +115,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hidden {
-    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }
 
 /* Home Section */
@@ -334,14 +336,17 @@ h1, h2, h3, h4, h5, h6 {
     overflow-y: auto;
     border-left: 1px solid #e0e0e0;
     height: 100%;
-    animation: none;
-    transform: none;
+    display: block;
+    visibility: visible;
     opacity: 1;
-    transition: display 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
+    pointer-events: auto;
+    transition: opacity 0.3s cubic-bezier(0.240, 1, 0.290, 1.0), visibility 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
 }
 
 .story-drawer.hidden {
-    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .drawer-close {
