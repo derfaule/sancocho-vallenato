@@ -10,7 +10,7 @@ const stories = [
         preview: "Una tonada nos regala la eterna metáfora continuada de un malherido amante.",
         content: "Esta personificación en la que se le atribuyen negativamente, a una ya bastante dañina, piel de porcino frita a altas y caldedas temperaturas las faenas y pormenores de una compleja y nociva relación, qué chicharrón diría.",
         image: 'imagenes-artistas-transparent/omargelesblanco2.png',
-        spotifyUrl: 'https://open.spotify.com/track/5nglqtzVpQqcQrxSy99z2b?si=0eede413b3d449e5'
+        youtubeUrl: 'https://www.youtube.com/watch?v=WQGhWODSV-Y'
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const stories = [
         preview: "De autoría de Romualdo Brito, una inexplicable y tubercular tonada.",
         content: "De autoría de Romualdo Brito, esta inexplicable y tubercular tonada que canta al amor titulada como dos nuestros acompañamientos de almidón preferidos.",
         image: 'imagenes-artistas-transparent/villalol.png',
-        spotifyUrl: 'https://open.spotify.com/track/6g8dDMax9zbrTPh5Uh2ZDP?si=8a1a29acc9ce4f5c'
+        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const stories = [
         preview: "Una eterna metáfora continuada de un malherido amante.",
         content: "Rotulado en Fiesta Vallenata Vol. 20, esta tonada nos regala la eterna metáfora continuada de un malherido amante amanerando a su musa con su suicidio de manera voraz.",
         image: 'imagenes-artistas-transparent/diomedesblanco.png',
-        spotifyUrl: 'https://open.spotify.com/track/0SztmpJGHpl4ys9Ev5vNVP?si=c5c4b9f9d59240eb'
+        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const stories = [
         preview: "Una invitación a la celebración de la vida caribeña.",
         content: "Una invitación parrandera a celebrar con alegría los momentos de la vida caribeña.",
         image: 'imagenes-artistas-transparent/landerocolorblanco2.png',
-        spotifyUrl: 'https://open.spotify.com/track/7bawpvwUsHiUud17sThx9x?si=b65115a8f02e4263'
+        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
         id: 5,
@@ -50,7 +50,7 @@ const stories = [
         preview: "La realidad de la educación colombiana.",
         content: "En autoría del ya ido maestro Escalona nos refiere a los periplos y abyectos menesteres alimenticios a los cuales se carea un estudiante de internado de la época.",
         image: 'imagenes-artistas-transparent/alfredogutierrezblanco2.png',
-        spotifyUrl: 'https://open.spotify.com/track/5a4ieyuPzAAb6uwSi4loi7?si=8baa80fd07734fb2'
+        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
         id: 6,
@@ -60,7 +60,7 @@ const stories = [
         preview: "Una oda de los contrastes navideños.",
         content: "De la apertura del lado B del rotulado 227 20928 del sello Costeño lo tenemos esta inolvidable oda de los contrastes navideños en nuestros albores de la mesa familiar, una tristeza que la desigualdad sea el pan diario de estas poesias.",
         image: 'imagenes-artistas-transparent/corralerosblanco.png',
-        spotifyUrl: 'https://open.spotify.com/track/7JIHN2bhJhHe9YlFueQoEk?si=96ba9dcca7584ead'
+        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
         id: 7,
@@ -70,7 +70,7 @@ const stories = [
         preview: "Una celebración de la sensualidad de los frutos caribeños.",
         content: "Tomado del LP de Fuentes titulado Volvimos, Los Corraleros nos invitan a llevar con ellos su carreta en la cuál estiban las famosas frutas del amor o de la pasión, un colorín digno de la región.",
         image: 'imagenes-artistas-transparent/corralerosblanco.png',
-        spotifyUrl: 'https://open.spotify.com/track/3Db8G3cud19j03DPLZ3uKs?si=f9d0699610694eb6'
+        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
         id: 8,
@@ -80,7 +80,7 @@ const stories = [
         preview: "Ritmo ancestral que mezcla herencias africana, española e indígena.",
         content: "Ritmo ancestral que mezcla la herencia africana, española e indígena. La cumbia es la voz del pueblo, la música que resuena en las calles de Colombia.",
         image: 'imagenes-artistas-transparent/diomedesdosblanco.png',
-        spotifyUrl: 'https://open.spotify.com/track/1caksBdmOPYNjs5DgfqP9G?si=3cae519acde345c6'
+        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
         id: 9,
@@ -90,7 +90,7 @@ const stories = [
         preview: "Una pieza satírica y humorística.",
         content: "Con su característico estilo satírico, Diomedes Díaz juega con los símbolos y metáforas de nuestra región, haciéndonos reír de nuestras propias realidades.",
         image: 'imagenes-artistas-transparent/diomedesblanco.png',
-        spotifyUrl: 'https://open.spotify.com/track/43M61bg2SH4H5KHGsjzrR7?si=98e7b685386a4de5'
+        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
         id: 10,
@@ -100,7 +100,7 @@ const stories = [
         preview: "Una celebración de la comida callejera y la gastronomía popular.",
         content: "La empanada como expresión de identidad y tradición. Un símbolo de la resistencia cultural de nuestro pueblo caribeño.",
         image: 'imagenes-artistas-transparent/calixto2.png',
-        spotifyUrl: 'https://open.spotify.com/track/5E69ZoNVNfcsCKMC0jeqGH?si=625a0de407e1492b'
+        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     }
 ];
 
@@ -184,15 +184,15 @@ function openStory(story) {
         imageDiv.innerHTML = '';
     }
 
-    // Set Spotify embed
+    // Set YouTube embed
     const spotifyEmbed = document.getElementById('spotifyEmbed');
-    if (story.spotifyUrl) {
-        spotifyEmbed.innerHTML = '<p>Loading Spotify...</p>';
-        fetchSpotifyEmbed(story.spotifyUrl).then(html => {
-            spotifyEmbed.innerHTML = html;
-        }).catch(err => {
-            spotifyEmbed.innerHTML = `<a href="${story.spotifyUrl}" target="_blank" rel="noopener noreferrer" class="spotify-btn">Escuchar en Spotify</a>`;
-        });
+    if (story.youtubeUrl) {
+        const videoId = extractYouTubeId(story.youtubeUrl);
+        if (videoId) {
+            spotifyEmbed.innerHTML = `<iframe width="100%" height="315" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        } else {
+            spotifyEmbed.innerHTML = `<a href="${story.youtubeUrl}" target="_blank" rel="noopener noreferrer" class="spotify-btn">Ver en YouTube</a>`;
+        }
     } else {
         spotifyEmbed.innerHTML = '';
     }
@@ -202,12 +202,20 @@ function openStory(story) {
     document.body.style.overflow = 'hidden';
 }
 
-// Fetch Spotify oEmbed
-async function fetchSpotifyEmbed(spotifyUrl) {
-    const oembedUrl = `https://open.spotify.com/oembed?url=${encodeURIComponent(spotifyUrl)}&maxheight=60`;
-    const response = await fetch(oembedUrl);
-    const data = await response.json();
-    return data.html;
+// Extract YouTube video ID from URL
+function extractYouTubeId(url) {
+    const patterns = [
+        /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/,
+        /^([a-zA-Z0-9_-]{11})$/ // Direct video ID
+    ];
+
+    for (let pattern of patterns) {
+        const match = url.match(pattern);
+        if (match && match[1]) {
+            return match[1];
+        }
+    }
+    return null;
 }
 
 // Close story detail

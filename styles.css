@@ -422,13 +422,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     background-color: transparent;
     border: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .spotify-embed iframe {
     width: 100% !important;
-    height: 80px !important;
+    height: 315px !important;
     border: none !important;
-    filter: invert(1) hue-rotate(180deg);
+    display: block;
 }
 
 .spotify-btn {
