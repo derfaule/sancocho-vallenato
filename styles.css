@@ -37,10 +37,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-white);
+    display: flex;
+    align-items: center;
     text-decoration: none;
+}
+
+.logo-image {
+    height: 60px;
+    width: auto;
+    max-width: 150px;
 }
 
 .nav-menu {
