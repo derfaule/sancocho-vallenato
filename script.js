@@ -158,7 +158,28 @@ function openStory(story) {
 
     siteWrapper.classList.add('drawer-open');
     console.log('siteWrapper.classList after add:', siteWrapper.className);
-    console.log('drawer computed display:', window.getComputedStyle(drawer).display);
+
+    const styles = window.getComputedStyle(drawer);
+    console.log('drawer computed styles:', {
+        display: styles.display,
+        visibility: styles.visibility,
+        opacity: styles.opacity,
+        gridColumn: styles.gridColumn,
+        gridRow: styles.gridRow,
+        width: styles.width,
+        height: styles.height,
+        zIndex: styles.zIndex
+    });
+
+    const rect = drawer.getBoundingClientRect();
+    console.log('drawer bounding rect:', {
+        top: rect.top,
+        left: rect.left,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height
+    });
 
     document.getElementById('storyTitle').textContent = story.title;
     document.getElementById('storyArtist').textContent = story.artist || '';
