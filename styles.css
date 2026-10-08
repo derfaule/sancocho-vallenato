@@ -323,8 +323,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     display: block;
     margin-bottom: 1.5rem;
-    max-height: 300px;
-    overflow: hidden;
 }
 
 .story-image img {
