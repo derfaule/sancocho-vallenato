@@ -330,28 +330,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .story-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
+    gap: 2rem;
+    align-items: center;
 }
 
 .story-image {
-    background-color: var(--primary-red);
-    min-height: 600px;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    overflow: auto;
+    overflow: visible;
+    min-height: auto;
+    padding: 1rem;
 }
 
 .story-image img {
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
     object-fit: contain;
+    display: block;
 }
 
 .story-body {
