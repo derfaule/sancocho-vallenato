@@ -328,13 +328,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Story Detail Drawer */
 .story-drawer {
-    position: static;
-    grid-column: 3;
-    grid-row: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 33.333%;
+    height: 100vh;
     background-color: var(--primary-white);
     border-left: 2px solid #000;
     overflow-y: auto;
-    height: 100%;
     display: block;
     visibility: visible;
     opacity: 1;
