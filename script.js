@@ -166,7 +166,7 @@ function openStory(story) {
 
 // Fetch Spotify oEmbed
 async function fetchSpotifyEmbed(spotifyUrl) {
-    const oembedUrl = `https://open.spotify.com/oembed?url=${encodeURIComponent(spotifyUrl)}`;
+    const oembedUrl = `https://open.spotify.com/oembed?url=${encodeURIComponent(spotifyUrl)}&maxheight=60`;
     const response = await fetch(oembedUrl);
     const data = await response.json();
     return data.html;
