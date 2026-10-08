@@ -240,34 +240,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stories-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
     margin-top: 2rem;
-}
-
-@media (max-width: 1024px) {
-    .stories-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .stories-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .story-card {
     background: var(--primary-white);
-    padding: 2rem;
+    padding: 1.5rem;
     cursor: pointer;
     text-align: left;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 3.1rem;
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
     gap: 0.5rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.story-card:last-child {
+    border-bottom: none;
 }
 
 .story-card:hover {
@@ -275,7 +272,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .story-card-title {
-    font-size: 1.1rem;
     color: var(--primary-black);
     margin-bottom: 0;
     font-weight: bold;
@@ -283,7 +279,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .story-card-artist {
-    font-size: 0.9rem;
     color: var(--primary-black);
     margin-bottom: 0;
     font-weight: normal;
@@ -291,7 +286,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .story-card-year {
-    font-size: 0.85rem;
     color: var(--primary-black);
     margin-bottom: 0;
     font-style: normal;
