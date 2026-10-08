@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     font-family: 'Spectral', serif;
     background-color: var(--primary-white);
@@ -70,11 +75,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main Layout */
 .site-wrapper {
+    width: 100%;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     transition: grid-template-columns 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
+    overflow-x: hidden;
 }
 
 .site-wrapper.drawer-open {
@@ -117,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Home Section */
 .home-section {
-    background-image: linear-gradient(180deg, var(--primary-black) 0%, #f2c409 16%, #ffffff 76%, #ffffff 100%);
+    background-image: linear-gradient(180deg, var(--primary-black) 0%, var(--primary-black) 16%, var(--primary-white) 76%, var(--primary-white) 100%);
     background-position: 0 0;
     background-size: 100% 100%;
     color: var(--primary-black);
