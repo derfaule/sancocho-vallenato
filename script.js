@@ -132,6 +132,8 @@ function renderStories() {
 // Open story detail
 function openStory(story) {
     const drawer = document.getElementById('story-drawer');
+    const siteWrapper = document.querySelector('.site-wrapper');
+
     document.getElementById('storyTitle').textContent = story.title;
     document.getElementById('storyArtist').textContent = story.artist || '';
     document.getElementById('storyYear').textContent = story.year;
@@ -159,6 +161,7 @@ function openStory(story) {
     }
 
     drawer.classList.remove('hidden');
+    siteWrapper.classList.add('drawer-open');
     document.body.style.overflow = 'hidden';
 }
 
@@ -173,7 +176,9 @@ async function fetchSpotifyEmbed(spotifyUrl) {
 // Close story detail
 function closeStory() {
     const drawer = document.getElementById('story-drawer');
+    const siteWrapper = document.querySelector('.site-wrapper');
     drawer.classList.add('hidden');
+    siteWrapper.classList.remove('drawer-open');
     document.body.style.overflow = 'auto';
 }
 
