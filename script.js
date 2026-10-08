@@ -146,6 +146,15 @@ function openStory(story) {
         imageDiv.innerHTML = '';
     }
 
+    // Set Spotify link
+    const spotifyLink = document.getElementById('spotifyLink');
+    if (story.spotifyUrl) {
+        spotifyLink.href = story.spotifyUrl;
+        spotifyLink.style.display = 'inline-block';
+    } else {
+        spotifyLink.style.display = 'none';
+    }
+
     drawer.classList.remove('hidden');
     document.querySelector('.stories-section').classList.add('drawer-open');
     document.body.style.overflow = 'hidden';
