@@ -175,10 +175,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .intro-wrapper {
     display: block;
+    overflow: auto;
 }
 
 .intro-image {
-    display: none;
+    float: left;
+    width: 35%;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .intro-text {
