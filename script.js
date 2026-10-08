@@ -114,6 +114,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // Render stories grid
 function renderStories() {
     const grid = document.getElementById('storiesGrid');
+    if (!grid) {
+        console.error('storiesGrid element not found');
+        return;
+    }
     grid.innerHTML = '';
 
     stories.forEach(story => {
@@ -124,7 +128,12 @@ function renderStories() {
             <p class="story-card-artist">${story.artist}</p>
             <p class="story-card-year">(<em>${story.year}</em>)</p>
         `;
-        card.addEventListener('click', () => openStory(story));
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            openStory(story);
+        });
         grid.appendChild(card);
     });
 }
@@ -133,6 +142,11 @@ function renderStories() {
 function openStory(story) {
     const drawer = document.getElementById('story-drawer');
     const siteWrapper = document.querySelector('.site-wrapper');
+
+    if (!drawer || !siteWrapper) {
+        console.error('Drawer or site-wrapper not found');
+        return;
+    }
 
     document.getElementById('storyTitle').textContent = story.title;
     document.getElementById('storyArtist').textContent = story.artist || '';
