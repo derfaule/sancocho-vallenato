@@ -125,6 +125,9 @@ function openStory(story) {
         imageDiv.innerHTML = `<h3 style="color: white; font-size: 2rem; text-align: center;">${story.year}</h3>`;
     }
 
+    // Add story-specific class for custom layouts
+    detail.className = `section story-detail story-${story.id}`;
+
     detail.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
 }
