@@ -340,12 +340,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .story-image {
     background-color: var(--primary-red);
-    min-height: 500px;
+    min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .story-image img {
