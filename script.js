@@ -123,19 +123,70 @@ function renderStories() {
     stories.forEach(story => {
         const card = document.createElement('div');
         card.className = 'story-card';
+        card.id = `story-${story.id}`;
         card.innerHTML = `
             <h3 class="story-card-title">${story.title}</h3>
             <p class="story-card-artist">${story.artist}</p>
             <p class="story-card-year">(<em>${story.year}</em>)</p>
+            <div class="story-expanded-content" style="display: none; margin-top: 1rem;">
+                <div class="story-image" style="margin-bottom: 1rem;"></div>
+                <div class="story-text" style="margin-bottom: 1rem;"></div>
+                <div class="spotify-embed"></div>
+            </div>
         `;
         card.style.cursor = 'pointer';
         card.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            openStory(story);
+            expandStory(card, story);
         });
         grid.appendChild(card);
     });
+}
+
+// Toggle story expansion
+function expandStory(card, story) {
+    const isExpanded = card.classList.contains('expanded');
+
+    // Close all other expanded cards
+    document.querySelectorAll('.story-card.expanded').forEach(c => {
+        if (c !== card) {
+            c.classList.remove('expanded');
+            c.querySelector('.story-expanded-content').style.display = 'none';
+        }
+    });
+
+    if (isExpanded) {
+        card.classList.remove('expanded');
+        card.querySelector('.story-expanded-content').style.display = 'none';
+    } else {
+        card.classList.add('expanded');
+        const content = card.querySelector('.story-expanded-content');
+        content.style.display = 'block';
+
+        // Populate content
+        const imageDiv = content.querySelector('.story-image');
+        if (story.image) {
+            imageDiv.innerHTML = `<img src="${story.image}" alt="${story.title}" style="width: 100%; height: auto; display: block;">`;
+        }
+
+        const textDiv = content.querySelector('.story-text');
+        textDiv.innerHTML = `<p>${story.content}</p>`;
+
+        // Add YouTube embed
+        const embedDiv = content.querySelector('.spotify-embed');
+        if (story.youtubeUrl) {
+            const videoId = extractYouTubeId(story.youtubeUrl);
+            if (videoId) {
+                embedDiv.innerHTML = `<iframe width="100%" height="250" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            }
+        }
+
+        // Scroll card into view
+        setTimeout(() => {
+            card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+    }
 }
 
 // Open story detail

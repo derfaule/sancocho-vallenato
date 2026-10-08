@@ -78,36 +78,56 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     overflow-x: hidden;
 }
 
 .nav-header {
+    grid-row: 1;
     grid-column: 1 / -1;
 }
 
 .main-content {
-    grid-column: 1 / 4;
     grid-row: 2;
-    transition: grid-column 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
-}
-
-/* When drawer opens, main content shrinks to 2 columns */
-.site-wrapper.drawer-open .main-content {
-    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    overflow: hidden;
 }
 
 .footer {
+    grid-row: 3;
     grid-column: 1 / -1;
 }
 
 .section {
-    min-height: 100vh;
-    padding: 4rem 2rem;
+    padding: 0;
+    display: block;
+}
+
+.section.home-section {
+    grid-column: 1 / -1;
+    padding: 2rem;
+    min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.section.intro-section {
+    grid-column: 1;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    padding: 0 !important;
+}
+
+.section.stories-section {
+    grid-column: 2;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    padding: 0 !important;
+    min-height: auto;
 }
 
 .section-content {
@@ -219,25 +239,22 @@ h1, h2, h3, h4, h5, h6 {
 /* Intro Section */
 .intro-section {
     background-color: var(--primary-white);
-    padding: 4rem 2rem !important;
 }
 
 .intro-content {
-    margin: 0 auto;
+    padding: 2rem;
 }
 
 .intro-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
+    display: block;
 }
 
 .intro-image {
-    grid-column: 1;
     position: sticky;
-    top: 120px;
+    top: 0;
     overflow: hidden;
+    margin-bottom: 2rem;
+    max-height: 40vh;
 }
 
 .intro-image img {
@@ -249,8 +266,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-text {
-    grid-column: 2 / 4;
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.8;
     text-align: left;
 }
@@ -270,16 +286,18 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Stories Grid - Bento Layout */
 .stories-section {
-    min-height: auto;
-    padding: 4rem 2rem;
     background-color: var(--primary-white);
+}
+
+.section-content {
+    padding: 2rem;
 }
 
 .stories-grid {
     display: flex;
     flex-direction: column;
     gap: 0;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .story-card {
@@ -293,6 +311,9 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 0.25rem;
     align-items: flex-start;
+    transition: background-color 0.2s, max-height 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
+    max-height: 150px;
+    overflow: hidden;
 }
 
 .story-card:last-child {
@@ -301,6 +322,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .story-card:hover {
     background-color: #f5f5f5;
+}
+
+.story-card.expanded {
+    max-height: none;
+    overflow: visible;
+    background-color: #f9f9f9;
+    padding: 2rem 1.5rem;
+}
+
+.story-card.expanded .story-card-title {
+    margin-bottom: 0.5rem;
+}
+
+.story-card.expanded .story-card-artist {
+    margin-bottom: 0.25rem;
+}
+
+.story-card.expanded .story-card-year {
+    margin-bottom: 1.5rem;
 }
 
 .story-card-title {
@@ -326,28 +366,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.95rem;
 }
 
-/* Story Detail Drawer */
+/* Story Detail Drawer - Hidden for new layout */
 .story-drawer {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 33.333%;
-    height: 100vh;
-    background-color: var(--primary-white);
-    border-left: 2px solid #000;
-    overflow-y: auto;
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
-    transition: opacity 0.3s cubic-bezier(0.240, 1, 0.290, 1.0), visibility 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
-    z-index: 50;
-}
-
-.story-drawer.hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+    display: none !important;
 }
 
 .drawer-close {
