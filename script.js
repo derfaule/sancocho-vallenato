@@ -121,9 +121,8 @@ function renderStories() {
         card.className = 'story-card';
         card.innerHTML = `
             <h3 class="story-card-title">${story.title}</h3>
-            <p class="story-card-year">${story.year}</p>
-            <p class="story-card-preview">${story.preview}</p>
-            <div class="story-card-cta">Leer más →</div>
+            <p class="story-card-artist">${story.artist}</p>
+            <p class="story-card-year">(<em>${story.year}</em>)</p>
         `;
         card.addEventListener('click', () => openStory(story));
         grid.appendChild(card);
