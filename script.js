@@ -8,7 +8,7 @@ const stories = [
         year: 1999,
         preview: "Una tonada nos regala la eterna metáfora continuada de un malherido amante.",
         content: "Esta personificación en la que se le atribuyen negativamente, a una ya bastante dañina, piel de porcino frita a altas y caldedas temperaturas las faenas y pormenores de una compleja y nociva relación, qué chicharrón diría.",
-        image: 'assets/img-018.png'
+        image: 'imagenes-artistas-transparent/omargelesblanco2.png'
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ const stories = [
         year: 2002,
         preview: "La 'mermelada' fue crucial para la escogencia del Presidente Juan Manuel Santos.",
         content: "La mermelada, ese grotesco pago de cuotas o favores políticos en forma de dineros público que untaban en los paneles de poder. Ese tan arraigado plato de fusión culinaria que mezcla cocidos típicos españoles con los ajíacos de nuestros colonizados indígenas.",
-        image: 'assets/img-020.png'
+        image: 'imagenes-artistas-transparent/mermeladablanconegro2.png'
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const stories = [
         year: 1985,
         preview: "De autoría de Romualdo Brito, una inexplicable y tubercular tonada.",
         content: "Una bellísima composición sobre los frutos de la región que alimentan nuestro pueblo caribe. La yuca como símbolo de resistencia y la hamaca como descanso del trabajador.",
-        image: 'assets/img-030.png'
+        image: 'imagenes-artistas-transparent/villalol.png'
     },
     {
         id: 4,
@@ -32,7 +32,7 @@ const stories = [
         year: 2014,
         preview: "Raúl Lallemand nos presenta esta tonada con un toque de sátira.",
         content: "Una composición que habla sobre la división de recursos y las desigualdades que caracterizan nuestra región.",
-        image: 'assets/img-036.png'
+        image: 'imagenes-artistas-transparent/landerocolorblanco2.png'
     },
     {
         id: 5,
@@ -40,7 +40,7 @@ const stories = [
         year: 1992,
         preview: "Carlos Vives nos recuerda la realidad de la educación colombiana.",
         content: "Una canción sobre las carencias y luchas de los estudiantes en nuestro sistema educativo.",
-        image: 'assets/img-046.png'
+        image: 'imagenes-artistas-transparent/alfredogutierrezblanco2.png'
     },
     {
         id: 6,
@@ -48,7 +48,7 @@ const stories = [
         year: 1992,
         preview: "Alfredo Gutiérrez nos presenta una receta de la región caribeña.",
         content: "Con la aguardiente como protagonista, esta canción celebra los elementos básicos de nuestra gastronomía, la comida simple pero sustancial que ha mantenido viva a la región.",
-        image: 'assets/img-048.png'
+        image: 'imagenes-artistas-transparent/alfredogutierrezblanco2.png'
     },
     {
         id: 7,
@@ -56,7 +56,7 @@ const stories = [
         year: 1974,
         preview: "Los Corraleros de Majagual nos invitan a una celebración de abundancia.",
         content: "Un colorín digno de la región. Nos presentan una celebración de la sensualidad de los frutos de nuestra tierra caribeña.",
-        image: 'assets/img-056.png'
+        image: 'imagenes-artistas-transparent/corralerosblanco.png'
     },
     {
         id: 8,
@@ -64,7 +64,7 @@ const stories = [
         year: 1978,
         preview: "La cumbia es el lenguaje del pueblo caribe, la expresión más pura.",
         content: "Ritmo ancestral que mezcla la herencia africana, española e indígena. La cumbia es la voz del pueblo, la música que resuena en las calles de Colombia.",
-        image: 'assets/img-060.png'
+        image: 'imagenes-artistas-transparent/diomedesdosblanco.png'
     },
     {
         id: 9,
@@ -72,7 +72,7 @@ const stories = [
         year: 1979,
         preview: "Diomedes Díaz nos presenta una pieza satírica y humorística.",
         content: "Con su característico estilo satírico, Diomedes Díaz juega con los símbolos y metáforas de nuestra región, haciéndonos reír de nuestras propias realidades.",
-        image: 'assets/img-064.png'
+        image: 'imagenes-artistas-transparent/diomedesblanco.png'
     },
     {
         id: 10,
@@ -80,7 +80,7 @@ const stories = [
         year: 1981,
         preview: "Una celebración de la comida callejera y la gastronomía popular.",
         content: "La empanada como expresión de identidad y tradición. Un símbolo de la resistencia cultural de nuestro pueblo caribeño.",
-        image: 'assets/img-066.png'
+        image: 'imagenes-artistas-transparent/calixto2.png'
     }
 ];
 
