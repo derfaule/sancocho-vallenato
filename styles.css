@@ -123,14 +123,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .subtitle {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-.cta-block {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
+.scroll-arrow {
+    font-size: 2rem;
+    color: var(--primary-white);
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .btn {
