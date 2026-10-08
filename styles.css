@@ -337,16 +337,11 @@ h1, h2, h3, h4, h5, h6 {
     animation: none;
     transform: none;
     opacity: 1;
-    display: none;
     transition: display 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
 }
 
 .story-drawer.hidden {
     display: none !important;
-}
-
-.story-drawer:not(.hidden) {
-    display: block;
 }
 
 .drawer-close {
