@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Home Section */
 .home-section {
-    background-image: linear-gradient(180deg, var(--primary-black) 0%, var(--primary-black) 16%, var(--primary-white) 76%, var(--primary-white) 100%);
+    background-color: var(--primary-white);
     color: var(--primary-black);
     position: relative;
 }
