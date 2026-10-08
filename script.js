@@ -167,7 +167,7 @@ function expandStory(card, story) {
         // Populate content
         const imageDiv = content.querySelector('.story-image');
         if (story.image) {
-            imageDiv.innerHTML = `<img src="${story.image}" alt="${story.title}" style="width: 100%; height: auto; display: block;">`;
+            imageDiv.innerHTML = `<img src="${story.image}" alt="${story.title}" loading="lazy" style="width: 100%; height: auto; display: block;">`;
         }
 
         const textDiv = content.querySelector('.story-text');
