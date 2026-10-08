@@ -143,10 +143,22 @@ function openStory(story) {
     const drawer = document.getElementById('story-drawer');
     const siteWrapper = document.querySelector('.site-wrapper');
 
+    console.log('openStory called for:', story.title);
+    console.log('drawer element:', drawer);
+    console.log('siteWrapper element:', siteWrapper);
+
     if (!drawer || !siteWrapper) {
         console.error('Drawer or site-wrapper not found');
         return;
     }
+
+    console.log('drawer.classList before:', drawer.className);
+    drawer.classList.remove('hidden');
+    console.log('drawer.classList after remove:', drawer.className);
+
+    siteWrapper.classList.add('drawer-open');
+    console.log('siteWrapper.classList after add:', siteWrapper.className);
+    console.log('drawer computed display:', window.getComputedStyle(drawer).display);
 
     document.getElementById('storyTitle').textContent = story.title;
     document.getElementById('storyArtist').textContent = story.artist || '';
