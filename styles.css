@@ -192,15 +192,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-wrapper {
-    display: block;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
 }
 
 .intro-image {
-    width: 380px;
-    float: left;
-    margin-right: 3rem;
-    margin-bottom: 2rem;
+    grid-column: 1;
     position: sticky;
     top: 120px;
 }
@@ -212,16 +211,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-text {
+    grid-column: 2 / 4;
     font-size: 1rem;
     line-height: 1.8;
     text-align: left;
-    overflow: auto;
-}
-
-.intro-text::after {
-    content: '';
-    display: table;
-    clear: both;
 }
 
 .intro-text p {
