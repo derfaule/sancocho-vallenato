@@ -293,7 +293,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Story Detail */
 .story-detail {
-    min-height: 100vh;
     background-color: var(--primary-white);
     position: fixed;
     top: 0;
@@ -303,6 +302,9 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 200;
     overflow-y: auto;
     padding: 4rem 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .close-btn {
@@ -331,22 +333,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .story-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    align-items: center;
+    align-items: start;
 }
 
 .story-image {
     background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     border-radius: 8px;
     overflow: visible;
-    min-height: auto;
-    padding: 1rem;
+    padding: 0;
 }
 
 .story-image img {
