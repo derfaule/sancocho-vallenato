@@ -146,18 +146,30 @@ function openStory(story) {
         imageDiv.innerHTML = '';
     }
 
-    // Set Spotify link
-    const spotifyLink = document.getElementById('spotifyLink');
+    // Set Spotify embed
+    const spotifyEmbed = document.getElementById('spotifyEmbed');
     if (story.spotifyUrl) {
-        spotifyLink.href = story.spotifyUrl;
-        spotifyLink.style.display = 'inline-block';
+        spotifyEmbed.innerHTML = '<p>Loading Spotify...</p>';
+        fetchSpotifyEmbed(story.spotifyUrl).then(html => {
+            spotifyEmbed.innerHTML = html;
+        }).catch(err => {
+            spotifyEmbed.innerHTML = `<a href="${story.spotifyUrl}" target="_blank" rel="noopener noreferrer" class="spotify-btn">Escuchar en Spotify</a>`;
+        });
     } else {
-        spotifyLink.style.display = 'none';
+        spotifyEmbed.innerHTML = '';
     }
 
     drawer.classList.remove('hidden');
     document.querySelector('.stories-section').classList.add('drawer-open');
     document.body.style.overflow = 'hidden';
+}
+
+// Fetch Spotify oEmbed
+async function fetchSpotifyEmbed(spotifyUrl) {
+    const oembedUrl = `https://open.spotify.com/oembed?url=${encodeURIComponent(spotifyUrl)}`;
+    const response = await fetch(oembedUrl);
+    const data = await response.json();
+    return data.html;
 }
 
 // Close story detail

@@ -368,8 +368,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
+.spotify-embed {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.spotify-embed iframe {
+    width: 100% !important;
+    height: 152px !important;
+    filter: invert(1) hue-rotate(180deg);
+}
+
 .spotify-btn {
-    width: 100%;
+    display: inline-block;
     padding: 0.8rem 1.5rem;
     background-color: #1DB954;
     color: white;
@@ -380,6 +393,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     font-family: 'Spectral', serif;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .spotify-btn:hover {
