@@ -486,23 +486,39 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
     }
 
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 1rem;
+    }
+
+    .section.intro-section {
+        height: auto;
+        overflow: visible;
+    }
+
+    .section.stories-section {
+        height: auto;
+        overflow: visible;
+    }
+
     .section {
-        padding: 2rem 1rem;
+        padding: 1rem;
         min-height: auto;
     }
 
     .intro-wrapper {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        display: block;
     }
 
     .intro-image {
-        grid-column: 1;
         position: static;
+        margin-bottom: 1rem;
+        max-height: 30vh;
     }
 
     .intro-text {
-        grid-column: 1;
+        font-size: 0.85rem;
     }
 
     .main-title {
