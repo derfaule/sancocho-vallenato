@@ -291,14 +291,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     border: none;
     border-bottom: 1px solid #e0e0e0;
-    font-size: 3.1rem;
     display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
 }
 
 .story-card:last-child {
@@ -314,6 +310,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-weight: bold;
     font-style: italic;
+    font-size: 1.4rem;
 }
 
 .story-card-artist {
@@ -321,12 +318,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-weight: normal;
     font-style: normal;
+    font-size: 1rem;
 }
 
 .story-card-year {
     color: var(--primary-black);
     margin-bottom: 0;
-    font-style: normal;
+    font-style: italic;
+    font-size: 0.95rem;
 }
 
 /* Story Detail Drawer */
