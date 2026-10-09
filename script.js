@@ -4,93 +4,83 @@
 const stories = [
     {
         id: 1,
-        title: "El Chicharrón",
+        title: "El Chicharrón (1999)",
         artist: "Omar Geles",
-        year: 1999,
         content: "Esta personificación en la que se le atribuyen negativamente, a una ya bastante dañina, piel de porcino frita a altas y caldedas temperaturas las faenas y pormenores de una compleja y nociva relación, qué chicharrón diría.",
         image: 'imagenes-artistas-transparent/omargelesblanco2.png',
-        youtubeUrl: 'https://www.youtube.com/watch?v=WQGhWODSV-Y'
+        youtubeUrl: 'https://www.youtube.com/watch?v=dBA1hMNptjs?si=lm2G54arifkqK81Q'
     },
     {
         id: 2,
-        title: "La Yuca y La Tajada",
+        title: "La Yuca y La Tajada (2014)",
         artist: "Ivan Villazon y Saul Lallemand",
-        year: 2014,
         content: "De autoría de Romualdo Brito, esta inexplicable y tubercular tonada que canta al amor titulada como dos nuestros acompañamientos de almidón preferidos.",
         image: 'imagenes-artistas-transparent/villalol.png',
-        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
+        youtubeUrl: 'https://www.youtube.com/watch?v=oYzuovtOApOfYbht'
     },
     {
         id: 3,
-        title: "El Comelón",
+        title: "El Comelón (1994)",
         artist: "Diomedes Diaz",
-        year: 1994,
         content: "Rotulado en Fiesta Vallenata Vol. 20, esta tonada nos regala la eterna metáfora continuada de un malherido amante amanerando a su musa con su suicidio de manera voraz.",
         image: 'imagenes-artistas-transparent/diomedesblanco.png',
-        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
+        youtubeUrl: 'https://www.youtube.com/watch?v=_k-5HRUb66f9j4M2'
     },
     {
         id: 4,
-        title: "Invitación Parrandera",
+        title: "Invitación Parrandera (1975)",
         artist: "Tomas Alfonso Zuleta & Nicolas Elias Mendoza",
-        year: 1975,
         content: "Una invitación parrandera a celebrar con alegría los momentos de la vida caribeña.",
         image: 'imagenes-artistas-transparent/invitacionvallenatablanco2.png',
-        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
+        youtubeUrl: 'https://www.youtube.com/watch?v=RTOwKh7QH9WopyUh'
     },
     {
         id: 5,
-        title: "El Hambre del Liceo",
+        title: "El Hambre del Liceo (1992)",
         artist: "Carlos Vives",
-        year: 1992,
         content: "En autoría del ya ido maestro Escalona nos refiere a los periplos y abyectos menesteres alimenticios a los cuales se carea un estudiante de internado de la época.",
         image: 'imagenes-artistas-transparent/el-hambre-del-liceo.svg',
-        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
+        youtubeUrl: 'https://www.youtube.com/watch?v=FOa2V0WSMGhshaCD'
     },
     {
         id: 6,
-        title: "Navidad",
+        title: "Navidad (1982)",
         artist: "El Binomio de Oro",
-        year: 1982,
         content: "De la apertura del lado B del rotulado 227 20928 del sello Costeño lo tenemos esta inolvidable oda de los contrastes navideños en nuestros albores de la mesa familiar, una tristeza que la desigualdad sea el pan diario de estas poesias.",
         image: 'imagenes-artistas-transparent/navidad.svg',
-        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
+        youtubeUrl: 'https://www.youtube.com/watch?v=W6w0bsgAg6w97t1V'
     },
     {
         id: 7,
-        title: "Las Frutas del Amor",
+        title: "Las Frutas del Amor (1974)",
         artist: "Los Corraleros de Majagual",
-        year: 1974,
         content: "Tomado del LP de Fuentes titulado Volvimos, Los Corraleros nos invitan a llevar con ellos su carreta en la cuál estiban las famosas frutas del amor o de la pasión, un colorín digno de la región.",
         image: 'imagenes-artistas-transparent/corralerosblanco.png',
-        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
+        youtubeUrl: 'https://www.youtube.com/watch?v=m2VyeZWNoxpbUtI8'
     },
     {
         id: 8,
-        title: "Cumbia Campesina",
+        title: "Cumbia Campesina (1983)",
         artist: "Andrés Landero",
-        year: 1983,
         content: "Ritmo ancestral que mezcla la herencia africana, española e indígena. La cumbia es la voz del pueblo, la música que resuena en las calles de Colombia.",
         image: 'imagenes-artistas-transparent/landerocolorblanco2.png',
-        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
+        youtubeUrl: 'https://www.youtube.com/watch?v=QNOUstgQAhr8S2Hb'
     },
     {
         id: 9,
-        title: "El Limoncito",
+        title: "El Limoncito (1979)",
         artist: "Diomedes Díaz",
-        year: 1979,
         content: "Con su característico estilo satírico, Diomedes Díaz juega con los símbolos y metáforas de nuestra región, haciéndonos reír de nuestras propias realidades.",
         image: 'imagenes-artistas-transparent/diomedesdosblanco.png',
-        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
+        youtubeUrl: 'https://www.youtube.com/watch?v=tczYoogLEoBkTheo'
     },
     {
         id: 10,
-        title: "La Empanadita",
+        title: "La Empanadita (1981)",
         artist: "Calixto Ochoa",
-        year: 1981,
         content: "La empanada como expresión de identidad y tradición. Un símbolo de la resistencia cultural de nuestro pueblo caribeño.",
         image: 'imagenes-artistas-transparent/calixto2.png',
-        youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
+        youtubeUrl: 'https://www.youtube.com/watch?v=cHXhTbQWAPNnEFv2'
     }
 ];
 
