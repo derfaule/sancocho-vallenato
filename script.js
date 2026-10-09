@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setupParallaxScroll();
 });
 
-// Parallax scroll effect for intro image
+// Parallax scroll effect for intro image - sticks to top, moves left to right
 function setupParallaxScroll() {
     const parallaxImage = document.querySelector('.parallax-image img');
     if (!parallaxImage) return;
@@ -101,8 +101,8 @@ function setupParallaxScroll() {
         const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPercent = (scrollY / maxScroll) * 100;
 
-        // Move image from -20% to +20% (left to right)
-        const translateX = (scrollPercent / 100) * 40 - 20;
+        // Move image from left (-150px) to right (+150px) as you scroll
+        const translateX = (scrollPercent / 100) * 300 - 150;
         parallaxImage.style.transform = `translateX(${translateX}px)`;
     });
 }
