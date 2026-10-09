@@ -115,6 +115,10 @@ function renderStories() {
         `;
         card.style.cursor = 'pointer';
         card.addEventListener('click', function(e) {
+            // Don't expand if clicking on the play button
+            if (e.target.closest('.youtube-play-btn')) {
+                return;
+            }
             e.preventDefault();
             e.stopPropagation();
             expandStory(card, story);
