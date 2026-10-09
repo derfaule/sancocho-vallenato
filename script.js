@@ -31,7 +31,7 @@ const stories = [
         title: "Invitación Parrandera",
         artist: "Tomas Alfonso Zuleta & Nicolas Elias Mendoza",
         content: "Una invitación parrandera a celebrar con alegría los momentos de la vida caribeña.",
-        image: 'imagenes-artistas-transparent/invitacionparrandera.png',
+        image: 'imagenes-artistas-transparent/invitacion-parrandera.svg',
         youtubeUrl: 'https://www.youtube.com/watch?v=m4eJLjDMWe8'
     },
     {
