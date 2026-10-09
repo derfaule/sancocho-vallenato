@@ -115,8 +115,8 @@ function renderStories() {
         `;
         card.style.cursor = 'pointer';
         card.addEventListener('click', function(e) {
-            // Don't expand if clicking on the play button
-            if (e.target.closest('.youtube-play-btn')) {
+            // Don't expand if clicking on the embed or play button
+            if (e.target.closest('.spotify-embed') || e.target.closest('.youtube-play-btn')) {
                 return;
             }
             e.preventDefault();
@@ -172,10 +172,13 @@ function expandStory(card, story) {
         const textDiv = content.querySelector('.story-text');
         textDiv.innerHTML = `<p>${story.content}</p>`;
 
-        // Add YouTube play button
+        // Add YouTube audio embed
         const embedDiv = content.querySelector('.spotify-embed');
         if (story.youtubeUrl) {
-            embedDiv.innerHTML = `<a href="${story.youtubeUrl}" target="_blank" class="youtube-play-btn" title="Play on YouTube">▶</a>`;
+            const videoId = extractYouTubeId(story.youtubeUrl);
+            if (videoId) {
+                embedDiv.innerHTML = `<iframe width="100%" height="90" src="https://www.youtube.com/embed/${videoId}" title="YouTube audio player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            }
         }
 
         // Scroll card into view
