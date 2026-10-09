@@ -170,10 +170,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .parallax-image {
     perspective: 1000px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .parallax-image img {
     transition: transform 0.05s ease-out;
+    width: 100%;
+    height: auto;
 }
 
 .intro-image img {
