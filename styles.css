@@ -347,11 +347,25 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-.spotify-embed iframe {
-    width: 100% !important;
-    height: 315px !important;
-    border: none !important;
-    display: block;
+.youtube-play-btn {
+    display: inline-block;
+    font-size: 3rem;
+    color: var(--primary-black);
+    text-decoration: none;
+    padding: 1rem;
+    border: 2px solid var(--primary-black);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.youtube-play-btn:hover {
+    background-color: var(--primary-black);
+    color: var(--primary-white);
 }
 
 /* Footer */

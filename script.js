@@ -152,13 +152,10 @@ function expandStory(card, story) {
         const textDiv = content.querySelector('.story-text');
         textDiv.innerHTML = `<p>${story.content}</p>`;
 
-        // Add YouTube embed
+        // Add YouTube play button
         const embedDiv = content.querySelector('.spotify-embed');
         if (story.youtubeUrl) {
-            const videoId = extractYouTubeId(story.youtubeUrl);
-            if (videoId) {
-                embedDiv.innerHTML = `<iframe width="100%" height="250" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-            }
+            embedDiv.innerHTML = `<a href="${story.youtubeUrl}" target="_blank" class="youtube-play-btn" title="Play on YouTube">▶</a>`;
         }
 
         // Scroll card into view
