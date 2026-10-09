@@ -205,6 +205,14 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 35vh;
 }
 
+.parallax-image {
+    perspective: 1000px;
+}
+
+.parallax-image img {
+    transition: transform 0.05s ease-out;
+}
+
 .intro-image img {
     width: 100%;
     height: auto;

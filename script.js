@@ -89,7 +89,24 @@ document.addEventListener('DOMContentLoaded', function() {
     renderStories();
     setupNavigation();
     setupSmoothScroll();
+    setupParallaxScroll();
 });
+
+// Parallax scroll effect for intro image
+function setupParallaxScroll() {
+    const parallaxImage = document.querySelector('.parallax-image img');
+    if (!parallaxImage) return;
+
+    window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollY / maxScroll) * 100;
+
+        // Move image from -20% to +20% (left to right)
+        const translateX = (scrollPercent / 100) * 40 - 20;
+        parallaxImage.style.transform = `translateX(${translateX}px)`;
+    });
+}
 
 // Render stories grid
 function renderStories() {
