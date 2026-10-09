@@ -107,7 +107,7 @@ function renderStories() {
         card.innerHTML = `
             <h3 class="story-card-title">${story.title}</h3>
             <p class="story-card-artist">${story.artist}</p>
-            <div class="story-expanded-content" style="display: none; margin-top: 1rem;">
+            <div class="story-expanded-content" style="display: none; opacity: 0; margin-top: 1rem;">
                 <div class="story-image" style="margin-bottom: 1rem;"></div>
                 <div class="story-text" style="margin-bottom: 1rem;"></div>
                 <div class="spotify-embed"></div>
@@ -131,22 +131,38 @@ function expandStory(card, story) {
     document.querySelectorAll('.story-card.expanded').forEach(c => {
         if (c !== card) {
             c.classList.remove('expanded');
-            c.querySelector('.story-expanded-content').style.display = 'none';
+            const content = c.querySelector('.story-expanded-content');
+            content.style.opacity = '0';
+            setTimeout(() => {
+                content.style.display = 'none';
+            }, 300);
+            const img = c.querySelector('.story-image');
+            if (img) img.classList.remove('animate');
         }
     });
 
     if (isExpanded) {
         card.classList.remove('expanded');
-        card.querySelector('.story-expanded-content').style.display = 'none';
+        const content = card.querySelector('.story-expanded-content');
+        content.style.opacity = '0';
+        const img = card.querySelector('.story-image');
+        if (img) img.classList.remove('animate');
+        setTimeout(() => {
+            content.style.display = 'none';
+        }, 300);
     } else {
         card.classList.add('expanded');
         const content = card.querySelector('.story-expanded-content');
         content.style.display = 'block';
+        setTimeout(() => {
+            content.style.opacity = '1';
+        }, 10);
 
         // Populate content
         const imageDiv = content.querySelector('.story-image');
         if (story.image) {
             imageDiv.innerHTML = `<img src="${story.image}" alt="${story.title}" loading="lazy" style="width: 100%; height: auto; display: block;">`;
+            imageDiv.classList.add('animate');
         }
 
         const textDiv = content.querySelector('.story-text');
