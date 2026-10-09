@@ -252,7 +252,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem 1.5rem;
     cursor: pointer;
     text-align: left;
-    border: 1px solid #ddd;
+    border: none;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     display: flex;
     flex-direction: column;
     gap: 0.15rem;
@@ -260,8 +262,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: background-color 0.2s, max-height 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
     max-height: 80px;
     overflow: hidden;
-    flex: 0 1 calc(50% - 1px);
-    min-width: 200px;
+    flex: 0 1 50%;
 }
 
 .story-card:hover {
@@ -467,6 +468,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .story-card {
         flex: 0 1 100%;
+        border-right: none;
     }
 
     .story-detail {
