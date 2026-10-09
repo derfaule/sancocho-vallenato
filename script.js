@@ -6,7 +6,6 @@ const stories = [
         id: 1,
         title: "El Chicharrón",
         artist: "Omar Geles",
-        year: 1999,
         content: "Esta personificación en la que se le atribuyen negativamente, a una ya bastante dañina, piel de porcino frita a altas y caldedas temperaturas las faenas y pormenores de una compleja y nociva relación, qué chicharrón diría.",
         image: 'imagenes-artistas-transparent/omargelesblanco2.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=WQGhWODSV-Y'
@@ -15,7 +14,6 @@ const stories = [
         id: 2,
         title: "La Yuca y La Tajada",
         artist: "Ivan Villazon y Saul Lallemand",
-        year: 2014,
         content: "De autoría de Romualdo Brito, esta inexplicable y tubercular tonada que canta al amor titulada como dos nuestros acompañamientos de almidón preferidos.",
         image: 'imagenes-artistas-transparent/villalol.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
@@ -24,7 +22,6 @@ const stories = [
         id: 3,
         title: "El Comelón",
         artist: "Diomedes Diaz",
-        year: 1994,
         content: "Rotulado en Fiesta Vallenata Vol. 20, esta tonada nos regala la eterna metáfora continuada de un malherido amante amanerando a su musa con su suicidio de manera voraz.",
         image: 'imagenes-artistas-transparent/diomedesblanco.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
@@ -33,7 +30,6 @@ const stories = [
         id: 4,
         title: "Invitación Parrandera",
         artist: "Tomas Alfonso Zuleta & Nicolas Elias Mendoza",
-        year: 1975,
         content: "Una invitación parrandera a celebrar con alegría los momentos de la vida caribeña.",
         image: 'imagenes-artistas-transparent/invitacionvallenatablanco2.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
@@ -42,7 +38,6 @@ const stories = [
         id: 5,
         title: "El Hambre del Liceo",
         artist: "Carlos Vives",
-        year: 1992,
         content: "En autoría del ya ido maestro Escalona nos refiere a los periplos y abyectos menesteres alimenticios a los cuales se carea un estudiante de internado de la época.",
         image: 'imagenes-artistas-transparent/el-hambre-del-liceo.svg',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
@@ -51,7 +46,6 @@ const stories = [
         id: 6,
         title: "Navidad",
         artist: "El Binomio de Oro",
-        year: 1982,
         content: "De la apertura del lado B del rotulado 227 20928 del sello Costeño lo tenemos esta inolvidable oda de los contrastes navideños en nuestros albores de la mesa familiar, una tristeza que la desigualdad sea el pan diario de estas poesias.",
         image: 'imagenes-artistas-transparent/navidad.svg',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
@@ -60,7 +54,6 @@ const stories = [
         id: 7,
         title: "Las Frutas del Amor",
         artist: "Los Corraleros de Majagual",
-        year: 1974,
         content: "Tomado del LP de Fuentes titulado Volvimos, Los Corraleros nos invitan a llevar con ellos su carreta en la cuál estiban las famosas frutas del amor o de la pasión, un colorín digno de la región.",
         image: 'imagenes-artistas-transparent/corralerosblanco.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
@@ -69,7 +62,6 @@ const stories = [
         id: 8,
         title: "Cumbia Campesina",
         artist: "Andrés Landero",
-        year: 1983,
         content: "Ritmo ancestral que mezcla la herencia africana, española e indígena. La cumbia es la voz del pueblo, la música que resuena en las calles de Colombia.",
         image: 'imagenes-artistas-transparent/landerocolorblanco2.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
@@ -78,7 +70,6 @@ const stories = [
         id: 9,
         title: "El Limoncito",
         artist: "Diomedes Díaz",
-        year: 1979,
         content: "Con su característico estilo satírico, Diomedes Díaz juega con los símbolos y metáforas de nuestra región, haciéndonos reír de nuestras propias realidades.",
         image: 'imagenes-artistas-transparent/diomedesdosblanco.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
@@ -87,7 +78,6 @@ const stories = [
         id: 10,
         title: "La Empanadita",
         artist: "Calixto Ochoa",
-        year: 1981,
         content: "La empanada como expresión de identidad y tradición. Un símbolo de la resistencia cultural de nuestro pueblo caribeño.",
         image: 'imagenes-artistas-transparent/calixto2.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
@@ -117,7 +107,6 @@ function renderStories() {
         card.innerHTML = `
             <h3 class="story-card-title">${story.title}</h3>
             <p class="story-card-artist">${story.artist}</p>
-            <p class="story-card-year">(<em>${story.year}</em>)</p>
             <div class="story-expanded-content" style="display: none; margin-top: 1rem;">
                 <div class="story-image" style="margin-bottom: 1rem;"></div>
                 <div class="story-text" style="margin-bottom: 1rem;"></div>
