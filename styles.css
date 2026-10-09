@@ -163,9 +163,10 @@ h1, h2, h3, h4, h5, h6 {
 .intro-image {
     position: sticky;
     top: 0;
-    overflow: hidden;
+    overflow: visible;
     margin-bottom: 1.5rem;
-    max-height: 25vh;
+    max-height: none;
+    height: auto;
 }
 
 .parallax-image {
