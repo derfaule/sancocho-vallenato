@@ -258,9 +258,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 0.15rem;
     align-items: flex-start;
-    transition: background-color 0.2s, max-height 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
-    max-height: 80px;
-    overflow: hidden;
+    transition: background-color 0.2s;
     flex: 0 1 100%;
 }
 
@@ -269,8 +267,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .story-card.expanded {
-    max-height: none;
-    overflow: visible;
     background-color: #fafafa;
     padding: 1.5rem;
 }
