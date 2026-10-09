@@ -44,7 +44,7 @@ const stories = [
         artist: "Carlos Vives",
         year: 1992,
         content: "En autoría del ya ido maestro Escalona nos refiere a los periplos y abyectos menesteres alimenticios a los cuales se carea un estudiante de internado de la época.",
-        image: 'imagenes-artistas-transparent/alfredogutierrezblanco2.png',
+        image: 'imagenes-artistas-transparent/el-hambre-del-liceo.svg',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
@@ -53,7 +53,7 @@ const stories = [
         artist: "El Binomio de Oro",
         year: 1982,
         content: "De la apertura del lado B del rotulado 227 20928 del sello Costeño lo tenemos esta inolvidable oda de los contrastes navideños en nuestros albores de la mesa familiar, una tristeza que la desigualdad sea el pan diario de estas poesias.",
-        image: 'imagenes-artistas-transparent/corralerosblanco.png',
+        image: 'imagenes-artistas-transparent/navidad.svg',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
