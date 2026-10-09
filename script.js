@@ -87,7 +87,6 @@ const stories = [
 // Initialize the site
 document.addEventListener('DOMContentLoaded', function() {
     renderStories();
-    setupNavigation();
     setupSmoothScroll();
     setupParallaxScroll();
 });
@@ -222,40 +221,6 @@ function extractYouTubeId(url) {
     return null;
 }
 
-
-// Setup navigation
-function setupNavigation() {
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            navMenu.classList.remove('active');
-
-            // Update active state
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
-
-            // Scroll to section
-            const section = link.getAttribute('data-section');
-            scrollToSection(section);
-        });
-    });
-}
-
-// Scroll to section
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-}
 
 // Setup smooth scroll for CTA buttons
 function setupSmoothScroll() {
