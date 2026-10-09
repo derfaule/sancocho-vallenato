@@ -1,0 +1,67 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "name": "Omar Geles",
+      "photoUrl": "imagenes-artistas-transparent/omargelesblanco2.png",
+      "bio": "Colombian vallenato singer and composer, renowned for his satirical and humorous songs that critique social issues with witty wordplay.",
+      "sampleMusicUrl": "https://www.youtube.com/watch?v=dBA1hMNptjs"
+    },
+    {
+      "id": 2,
+      "name": "Ivan Villazon y Saul Lallemand",
+      "photoUrl": "imagenes-artistas-transparent/villalol.png",
+      "bio": "Legendary vallenato duo from Colombia's Caribbean coast, known for their energetic performances and romantic ballads.",
+      "sampleMusicUrl": "https://www.youtube.com/watch?v=ropdwqJtrQ4"
+    },
+    {
+      "id": 3,
+      "name": "Diomedes Díaz",
+      "photoUrl": "imagenes-artistas-transparent/diomedesblanco.png",
+      "bio": "The 'King of Vallenato', an iconic figure in Colombian music whose innovative accordion work shaped modern vallenato.",
+      "sampleMusicUrl": "https://www.youtube.com/watch?v=GA2OYoq3gNo"
+    },
+    {
+      "id": 4,
+      "name": "Tomas Alfonso Zuleta & Nicolas Elias Mendoza",
+      "photoUrl": "imagenes-artistas-transparent/invitacion-parrandera.png",
+      "bio": "Classic vallenato composers and performers who captured the spirit of Caribbean celebration in their music.",
+      "sampleMusicUrl": "https://www.youtube.com/watch?v=m4eJLjDMWe8"
+    },
+    {
+      "id": 5,
+      "name": "Carlos Vives",
+      "photoUrl": "imagenes-artistas-transparent/el-hambre-del-liceo.svg",
+      "bio": "Contemporary Colombian artist blending traditional vallenato with modern sounds, bringing Colombian music to international audiences.",
+      "sampleMusicUrl": "https://www.youtube.com/watch?v=0XIqsybJg5o"
+    },
+    {
+      "id": 6,
+      "name": "El Binomio de Oro",
+      "photoUrl": "imagenes-artistas-transparent/navidad.svg",
+      "bio": "Iconic Colombian musical duo pioneering the modernization of vallenato, setting standards for the genre.",
+      "sampleMusicUrl": "https://www.youtube.com/watch?v=t0rTDZNWIyU"
+    },
+    {
+      "id": 7,
+      "name": "Los Corraleros de Majagual",
+      "photoUrl": "imagenes-artistas-transparent/corralerosblanco.png",
+      "bio": "Traditional Colombian cumbia group from Sucre, preserving the ancestral rhythms and cultural heritage of Caribbean music.",
+      "sampleMusicUrl": "https://www.youtube.com/watch?v=vvfI2gOqOLw"
+    },
+    {
+      "id": 8,
+      "name": "Andrés Landero",
+      "photoUrl": "imagenes-artistas-transparent/landerocolorblanco2.png",
+      "bio": "Master of the accordion and traditional cumbia rhythms, instrumental in defining the sound of Colombian folk music.",
+      "sampleMusicUrl": "https://www.youtube.com/watch?v=GQ9Gje94tgQ"
+    },
+    {
+      "id": 9,
+      "name": "Calixto Ochoa",
+      "photoUrl": "imagenes-artistas-transparent/calixto2.png",
+      "bio": "Renowned vallenato composer and performer whose poetic storytelling captures the essence of Colombian identity.",
+      "sampleMusicUrl": "https://www.youtube.com/watch?v=50mDGC34g_M"
+    }
+  ]
+}
