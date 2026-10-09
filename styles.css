@@ -30,8 +30,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation */
 .nav-header {
-    background-color: var(--primary-black);
-    color: var(--primary-white);
+    background-color: var(--primary-white);
+    color: var(--primary-black);
     padding: 0.75rem 2rem;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-    color: var(--primary-white);
+    color: var(--primary-black);
     text-decoration: none;
     font-size: 0.9rem;
 }
@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     background: none;
     border: none;
-    color: var(--primary-white);
+    color: var(--primary-black);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -304,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: normal;
     font-style: normal;
-    font-size: 0.85rem;
+    font-size: 1.1rem;
 }
 
 .story-card-year {
@@ -389,8 +389,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 .footer {
-    background-color: var(--primary-black);
-    color: var(--primary-white);
+    background-color: var(--primary-white);
+    color: var(--primary-black);
     text-align: center;
     padding: 1.5rem 2rem;
     font-size: 0.85rem;
@@ -439,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: var(--primary-black);
+        background-color: var(--primary-white);
         flex-direction: column;
         gap: 0;
         padding: 1rem 1.5rem;
