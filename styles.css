@@ -253,7 +253,6 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     text-align: left;
     border: none;
-    border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     display: flex;
     flex-direction: column;
@@ -262,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: background-color 0.2s, max-height 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
     max-height: 80px;
     overflow: hidden;
-    flex: 0 1 50%;
+    flex: 0 1 100%;
 }
 
 .story-card:hover {
