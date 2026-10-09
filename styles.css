@@ -242,7 +242,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .stories-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 0;
 }
 
@@ -251,8 +252,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem 1.5rem;
     cursor: pointer;
     text-align: left;
-    border: none;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
     display: flex;
     flex-direction: column;
     gap: 0.15rem;
@@ -260,10 +260,8 @@ h1, h2, h3, h4, h5, h6 {
     transition: background-color 0.2s, max-height 0.3s cubic-bezier(0.240, 1, 0.290, 1.0);
     max-height: 80px;
     overflow: hidden;
-}
-
-.story-card:last-child {
-    border-bottom: none;
+    flex: 0 1 calc(50% - 1px);
+    min-width: 200px;
 }
 
 .story-card:hover {
@@ -467,8 +465,8 @@ h1, h2, h3, h4, h5, h6 {
         height: 300px;
     }
 
-    .stories-grid {
-        grid-template-columns: 1fr;
+    .story-card {
+        flex: 0 1 100%;
     }
 
     .story-detail {

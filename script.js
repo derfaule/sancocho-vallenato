@@ -107,7 +107,6 @@ function renderStories() {
         card.innerHTML = `
             <h3 class="story-card-title">${story.title}</h3>
             <p class="story-card-artist">${story.artist}</p>
-            <p class="story-card-year">(<em>${story.year}</em>)</p>
             <div class="story-expanded-content" style="display: none; margin-top: 1rem;">
                 <div class="story-image" style="margin-bottom: 1rem;"></div>
                 <div class="story-text" style="margin-bottom: 1rem;"></div>
