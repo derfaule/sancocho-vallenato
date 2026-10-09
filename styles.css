@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     text-align: left;
     border: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--primary-black);
     display: flex;
     flex-direction: column;
     gap: 0.15rem;
@@ -263,11 +263,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .story-card:hover {
-    background-color: #fafafa;
+    background-color: var(--primary-white);
 }
 
 .story-card.expanded {
-    background-color: #fafafa;
+    background-color: var(--primary-white);
     padding: 1.5rem;
 }
 
