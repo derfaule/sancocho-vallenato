@@ -35,7 +35,7 @@ const stories = [
         artist: "Tomas Alfonso Zuleta & Nicolas Elias Mendoza",
         year: 1975,
         content: "Una invitación parrandera a celebrar con alegría los momentos de la vida caribeña.",
-        image: 'imagenes-artistas-transparent/landerocolorblanco2.png',
+        image: 'imagenes-artistas-transparent/invitacionvallenatablanco2.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
@@ -71,7 +71,7 @@ const stories = [
         artist: "Andrés Landero",
         year: 1983,
         content: "Ritmo ancestral que mezcla la herencia africana, española e indígena. La cumbia es la voz del pueblo, la música que resuena en las calles de Colombia.",
-        image: 'imagenes-artistas-transparent/diomedesdosblanco.png',
+        image: 'imagenes-artistas-transparent/landerocolorblanco2.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
@@ -80,7 +80,7 @@ const stories = [
         artist: "Diomedes Díaz",
         year: 1979,
         content: "Con su característico estilo satírico, Diomedes Díaz juega con los símbolos y metáforas de nuestra región, haciéndonos reír de nuestras propias realidades.",
-        image: 'imagenes-artistas-transparent/diomedesblanco.png',
+        image: 'imagenes-artistas-transparent/diomedesdosblanco.png',
         youtubeUrl: 'https://www.youtube.com/watch?v=INSERT_VIDEO_ID'
     },
     {
